@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS hostel_db;
+USE hostel_db;
+
+CREATE TABLE IF NOT EXISTS rooms (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100) NOT NULL,
+    room_number VARCHAR(20) NOT NULL,
+    block_name VARCHAR(50) NOT NULL,
+    monthly_fee INT NOT NULL,
+    allotted_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
